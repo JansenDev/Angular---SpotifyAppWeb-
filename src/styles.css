@@ -1,5 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
-
+/* //You can add global styles to this file, and also import other style files */
+/* 
 body {
     background-color: black;
     color: white !important;
@@ -37,7 +37,7 @@ hr {
 }
 
 
-/* Animaciones */
+
 
 .animated {
     -webkit-animation-duration: 1s;
@@ -64,4 +64,4 @@ hr {
 
 .fadeIn {
     animation-name: fadeIn;
-}
+} */
