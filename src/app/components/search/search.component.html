@@ -1,1 +1,15 @@
-<p>search works!</p>
+<div class="form-group mt-5">
+    <label for="formSearchArtist">Search</label>
+    <input class="form-control" type="text" name="" id="formSearchArtist" (keyup)='searchArtist(artistReference.value)'
+        #artistReference>
+</div>
+
+<div class="card-columns">
+    <div *ngFor='let artist of artists' class="card">
+        <img class="card-img-top img-fluid" [src]="artist.images[0].url" alt="">
+        <div class="card-body">
+            <h3> {{artist.name}} </h3>
+            <!-- <span class="badge badge-primary badge-pill"> {{ artist['artist'] }} </span> -->
+        </div>
+    </div>
+</div>
