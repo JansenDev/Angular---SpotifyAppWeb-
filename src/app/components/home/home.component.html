@@ -1,12 +1,2 @@
-<div class="container">
-    <div class="card-columns">
-        <div *ngFor='let release of releases' class="card">
-            <img class="img-fluid" [src]="release.images[0].url" alt="">
-            <div class="card-body">
-                <h3 class="card-title"> {{ release.name }} </h3>
-                <span *ngFor="let artists of release.artists"
-                    class="badge badge-pill badge-primary mr-1">{{ artists.name }}</span>
-            </div>
-        </div>
-    </div>
-</div>
+<app-loading *ngIf="loading"></app-loading>
+<app-tarjeta [items]='releases'></app-tarjeta>

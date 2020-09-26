@@ -1,0 +1,10 @@
+<div class="card-columns my-5 animated fadeIn">
+    <div (click)='searchArtist(card)' *ngFor='let card of items' class="card puntero">
+        <img class="img-fluid" [src]="card.images | noImage" alt="">
+        <div class="card-body">
+            <h3 class="card-title"> {{ card.name }} </h3>
+            <span *ngFor="let artists of card.artists"
+                class="badge badge-pill badge-primary mr-1">{{ artists.name }}</span>
+        </div>
+    </div>
+</div>

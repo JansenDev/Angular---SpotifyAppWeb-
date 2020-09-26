@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-// *HttpsModule 
+// !HttpsModule 
 import { HttpClientModule } from '@angular/common/http';
 
-// *Routes
+// !Routes
 import { AppRoutingModule } from './app-routing.module';
 // *Components 
 import { AppComponent } from './app.component';
@@ -11,7 +11,9 @@ import { SearchComponent } from './components/search/search.component';
 import { NavBarComponent } from './components/shared/nav-bar/nav-bar.component';
 import { HomeComponent } from './components/home/home.component';
 import { ArtistComponent } from './components/artist/artist.component';
-import { CommonModule } from '@angular/common';
+import { NoImagePipe } from './pipes/no-image.pipe';
+import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +21,16 @@ import { CommonModule } from '@angular/common';
     SearchComponent,
     NavBarComponent,
     HomeComponent,
-    ArtistComponent
+    ArtistComponent,
+    NoImagePipe,
+    TarjetaComponent,
+    LoadingComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    //CommonModule //
+    HttpClientModule, //!HttpClientModule    from @angular/common/http
   ],
   providers: [],
   bootstrap: [AppComponent]
