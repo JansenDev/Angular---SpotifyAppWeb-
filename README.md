@@ -20,7 +20,7 @@ En la pagina de artistas
 
 ##Alert error
 
-Si en caso ubiese algun error como por ejemplo el token expirado nos mostrará una simple alerta mostrandonos un message.
+Si en caso ubiese algun error como por ejemplo el token expirado nos mostrará una simple alerta y message.
 
 ![error](https://user-images.githubusercontent.com/71657821/95265413-c4cc3a80-07f6-11eb-8720-90b6dc9a3b37.png)
 
