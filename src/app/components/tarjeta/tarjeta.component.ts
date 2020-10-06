@@ -15,10 +15,8 @@ export class TarjetaComponent implements OnInit {
     let artist: string;
     if (item.type === 'album') {
       artist = item.artists[0].id;
-      console.log(artist);
     } else {
       artist = item.id
-      console.log(artist);
     }
     this.router.navigate(['/artist', artist]);
   }
