@@ -16,6 +16,7 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
 //  *Pipes
 import { NoImagePipe } from './pipes/no-image.pipe';
 import { DomseguroPipe } from './pipes/domseguro.pipe';
+import { ErrorComponent } from './components/shared/error/error.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DomseguroPipe } from './pipes/domseguro.pipe';
     NoImagePipe,
     TarjetaComponent,
     LoadingComponent,
-    DomseguroPipe
+    DomseguroPipe,
+    ErrorComponent
 
   ],
   imports: [

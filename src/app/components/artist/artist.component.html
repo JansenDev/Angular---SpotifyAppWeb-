@@ -20,10 +20,10 @@
                 <th>Album</th>
                 <th>Song</th>
                 <th>Preview song</th>
-            </tr>c
+            </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let track of topTracks" class="">
+            <tr *ngFor="let track of topTracks">
                 <td>
                     <img class="img-fluid img-thumb" [src]="track.album.images[0].url" alt="">
                 </td>

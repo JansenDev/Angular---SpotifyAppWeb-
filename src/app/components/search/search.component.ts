@@ -9,7 +9,11 @@ import { SpotifyService } from 'src/app/services/spotify.service';
 export class SearchComponent implements OnInit {
   artists: string;
   loading: boolean = false;
-  constructor(private spotifyService: SpotifyService) { }
+  message: string;
+  error: boolean;
+  constructor(private spotifyService: SpotifyService) {
+    this.error = false;
+  }
 
   searchArtist(reference: string) {
     if (reference.length > 0) {
@@ -18,10 +22,17 @@ export class SearchComponent implements OnInit {
         .subscribe((response) => {
           this.artists = response;
           this.loading = false;
+
+        }, (errorService: any) => {
+          this.loading = false;
+          this.error = true;
+          this.message = errorService.error.error.message;
         });
     }
 
   }
+
+
 
   ngOnInit(): void {
   }

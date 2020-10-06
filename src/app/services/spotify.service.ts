@@ -9,8 +9,6 @@ import { map } from 'rxjs/operators';
 })
 export class SpotifyService {
 
-
-
   constructor(private http: HttpClient) {
   }
 
@@ -18,45 +16,25 @@ export class SpotifyService {
 
     const URL = `https://api.spotify.com/v1/${query}`;
     const headers = new HttpHeaders({
-      'Authorization': 'Bearer QAvDKrl2gl4roQw6FHRkR69eSv3fGo7RAz7iSGH4unwJpJRDJurQ2FyWKHGSj3xTGkchIsMmEW6RZ0C74w'
+      'Authorization': 'Bearer BQDq6m9bnV4dVWTycI49C60sjx8bUIs9jAiuRXlFu4ipvMKHMyJzwix8sLC8qMU4DzhU_TxI0SpkyKP01Yk'
     });
     return this.http.get(URL, { headers });
   }
 
   getReleases() {
-    // // !Forma 2
-    // const headers = new HttpHeaders()
-    //   .set('Authorization', 'Bearer BQAbKYn3r1XnGn_pcWAcmiln4ghZUM4aLtSrt1hUueYGYRw6xjZAJ728QXAETmXE46lC9HtYMRogmbG5cQw')
-
-    // // !Forma 3
-    // const headers = new HttpHeaders({
-    //   'Authorization': 'Bearer BQAbKYn3r1XnGn_pcWAcmiln4ghZUM4aLtSrt1hUueYGYRw6xjZAJ728QXAETmXE46lC9HtYMRogmbG5cQw'
-    // });
-
-    // // !Forma 1 
-    // const header = new HttpHeaders({
-    //   'Authorization': 'Bearer BQBe-AXelQTSMUSGuCChXsGRY_4yNNGc9XjPeJlr_-hPDrKJeRihobOWL8ZXZJFVfKNGkH0CgEeOpLWLFdU'
-    // });
-
     return this.getQuery('browse/new-releases?limit=20')
       .pipe(map(val => val['albums'].items));
   }
 
   getSearchArtists(reference: string) {
-    // console.log(this.getQuery('search?q=${reference}&type=artist&limit=15')
-    //   .pipe(map(data => data['artists'].items)).subscribe((data) => {
-    //     console.log(data);
-    //   }));
     return this.getQuery(`search?q=${reference}&type=artist&limit=15`)
       .pipe(map(data => data['artists'].items));
   }
 
 
   getSearchArtist(id: string) {
-    //  let retornar = this.getQuery(`artists/&{id}`;
-    // console.log(this.getQuery(`artists/&{id}`));
     return this.getQuery(`artists/${id}`);
-    // return retornar;
+
   }
 
   getTopTracks(id: string) {
