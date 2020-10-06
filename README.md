@@ -1,27 +1,25 @@
 # SpotifyAppWeb
+Una aplicacion web SPA hecha en angular y estilos boostrap, con una lista de datos traidas desde el API de spotify y widgets para mejorar la presentación y reproducción de las listas de canciones del artita o del album
+En la pagina principal HOME el aplicativo nos muestra un lista de los nuevos lanzamientos
+En la pagina de artistas 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
+## Home New Releases `localhost:4200/home`
 
-## Development server
+![HOME NEW RELEASES](https://user-images.githubusercontent.com/71657821/95264189-86ce1700-07f4-11eb-9a5c-4408becb1582.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+##Search Artist `localhost:4200/search`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![SEARCH ARTIST](https://user-images.githubusercontent.com/71657821/95265082-17592700-07f6-11eb-8778-617a16cb40b5.png)
 
-## Build
+##Artist `localhost:4200/artist/{id}`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+![ARTIST TOP TRACKS](https://user-images.githubusercontent.com/71657821/95265224-643cfd80-07f6-11eb-892c-cd527d316c10.png)
 
-## Running unit tests
+![ARTIST TOP TRACKS ](https://user-images.githubusercontent.com/71657821/95265240-6c953880-07f6-11eb-978f-34d621cb0328.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+##Alert error
+Si en caso ubiese algun error como por ejemplo el token expirado nos mostrará una simple alerta mostrandonos un message.
 
-## Running end-to-end tests
+![error](https://user-images.githubusercontent.com/71657821/95265413-c4cc3a80-07f6-11eb-8720-90b6dc9a3b37.png)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
