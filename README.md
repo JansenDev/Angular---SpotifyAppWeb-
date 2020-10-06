@@ -19,6 +19,7 @@ En la pagina de artistas
 ![ARTIST TOP TRACKS ](https://user-images.githubusercontent.com/71657821/95265240-6c953880-07f6-11eb-978f-34d621cb0328.png)
 
 ##Alert error
+
 Si en caso ubiese algun error como por ejemplo el token expirado nos mostrará una simple alerta mostrandonos un message.
 
 ![error](https://user-images.githubusercontent.com/71657821/95265413-c4cc3a80-07f6-11eb-8720-90b6dc9a3b37.png)
