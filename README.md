@@ -3,9 +3,9 @@ Una aplicacion web SPA hecha en angular y estilos boostrap, con una lista de dat
 En la pagina principal HOME el aplicativo nos muestra un lista de los nuevos lanzamientos
 En la pagina de artistas 
 
-## Home 
+## Home `localhost:4200/home`
 
-New Releases `localhost:4200/home`
+New Releases 
 
 ![HOME NEW RELEASES](https://user-images.githubusercontent.com/71657821/95264189-86ce1700-07f4-11eb-9a5c-4408becb1582.png)
 
