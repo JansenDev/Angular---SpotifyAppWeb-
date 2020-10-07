@@ -1,5 +1,5 @@
 # SpotifyAppWeb
-Una aplicacion web SPA hecha en angular y estilos boostrap, con una lista de datos traidas desde el API de spotify y widgets para mejorar la presentación y reproducción de las listas de canciones del artita o del album
+Una aplicacion web SPA hecha en angular y estilos boostrap, con una lista de datos traidas desde el API de spotify y widgets para mejorar la presentación y reproducción de las listas de canciones del artista o del álbum
 En la pagina principal HOME el aplicativo nos muestra un lista de los nuevos lanzamientos
 En la pagina de artistas 
 
